@@ -11,10 +11,10 @@ with open('README.rst') as f:
 
 setup(name='ofxstatement-sample',
       version=version,
-      author="Andrey Lebedev",
-      author_email="andrey@lebedev.lt",
-      url="https://github.com/kedder/ofxstatement",
-      description=("Sample plugin for ofxstatement"),
+      author="Bernard Butaye",
+      author_email="",
+      url="https://github.com/renardeau/ofxstatement-be-belfius.git",
+      description=("Belfius bank plugin for ofxstatement (Belgium)"),
       long_description=long_description,
       license="GPLv3",
       keywords=["ofx", "banking", "statement"],
@@ -32,7 +32,7 @@ setup(name='ofxstatement-sample',
       namespace_packages=["ofxstatement", "ofxstatement.plugins"],
       entry_points={
           'ofxstatement':
-          ['sample = ofxstatement.plugins.sample:SamplePlugin']
+          ['belfius = ofxstatement.plugins.belfius:BelfiusPlugin']
           },
       install_requires=['ofxstatement'],
       include_package_data=True,
