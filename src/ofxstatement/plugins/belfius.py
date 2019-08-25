@@ -68,9 +68,7 @@ class BelfiusParser(CsvStatementParser):
     def split_records(self):
         """Return iterable object consisting of a line per transaction
         """
-        reader = csv.reader(self.fin, 'belfiuscsv')
-        next(reader, None)
-        return reader
+        return csv.reader(self.fin, 'belfiuscsv')
 
     def parse_record(self, line):
         """Parse given transaction line and return StatementLine object
