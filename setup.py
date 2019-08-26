@@ -9,7 +9,7 @@ version = "0.0.1"
 with open('README.rst') as f:
     long_description = f.read()
 
-setup(name='ofxstatement-sample',
+setup(name='ofxstatement-be-belfius',
       version=version,
       author="Bernard Butaye",
       author_email="",
