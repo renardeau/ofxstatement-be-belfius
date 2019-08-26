@@ -18,5 +18,5 @@ your own plugin.
 
 To convert proprietary ``belfius.csv`` to OFX ``belfius.ofx``, run::
 
-    $ ofxstatement -t belfius belfius.csv belfius.ofx
+    $ ofxstatement convert -t belfius belfius.csv belfius.ofx
 
