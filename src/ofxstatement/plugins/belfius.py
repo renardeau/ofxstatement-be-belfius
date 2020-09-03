@@ -76,6 +76,7 @@ class BelfiusParser(CsvStatementParser):
         if (self.statement.account_id == None):
             self.statement.account_id =  line[0].replace(" ", "")
         stmtline = super(BelfiusParser, self).parse_record(line)
+        stmtline.id = f'{line[1]}-{line[2]}-{line[3]}'
         stmtline.trntype = 'DEBIT' if stmtline.amount < 0 else 'CREDIT'
         stmtline.bank_account_to = BankAccount(line[12], line[4].replace(" ", ""))
         return stmtline
