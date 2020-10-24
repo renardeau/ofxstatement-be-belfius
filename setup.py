@@ -4,7 +4,7 @@
 from setuptools import find_packages
 from distutils.core import setup
 
-version = "0.0.1"
+version = "0.0.2"
 
 with open('README.rst') as f:
     long_description = f.read()
@@ -16,7 +16,6 @@ setup(name='ofxstatement-be-belfius',
       url="https://github.com/renardeau/ofxstatement-be-belfius.git",
       description=("Belfius bank plugin for ofxstatement (Belgium)"),
       long_description=long_description,
-      license="GPLv3",
       keywords=["ofx", "banking", "statement"],
       classifiers=[
           'Development Status :: 3 - Alpha',
@@ -26,7 +25,7 @@ setup(name='ofxstatement-be-belfius',
           'Topic :: Utilities',
           'Environment :: Console',
           'Operating System :: OS Independent',
-          'License :: OSI Approved :: GNU General Public License v3'],
+          'License :: OSI Approved :: GNU General Public License v3 (GPLv3)'],
       packages=find_packages('src'),
       package_dir={'': 'src'},
       namespace_packages=["ofxstatement", "ofxstatement.plugins"],
